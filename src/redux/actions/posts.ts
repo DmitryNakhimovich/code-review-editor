@@ -3,7 +3,7 @@ import { FETCH_POSTS, RECEIVE_POSTS } from '../types/posts';
 
 const {
   lorem: { paragraph, paragraphs, words },
-  random: { uuid, number },
+  random: { uuid },
 } = faker;
 
 export const receivePosts = (

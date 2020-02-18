@@ -6,6 +6,7 @@ import { fetchPosts } from '../redux/actions/posts';
 export const Posts = () => {
   const dispatch = useDispatch<any>();
   const posts = useSelector((state: any) => state.posts);
+
   useEffect(() => dispatch(fetchPosts()), []);
 
   return (

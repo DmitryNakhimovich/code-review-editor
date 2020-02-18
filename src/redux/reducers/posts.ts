@@ -21,12 +21,12 @@ export const posts = (state = initialState, action: any) => {
     case FETCH_POSTS:
       return {
         ...state,
-        isFetching: true,
+        loading: true,
       };
     case RECEIVE_POSTS:
       return {
         ...state,
-        isFetching: false,
+        loading: false,
         posts: state.posts.concat(action.posts),
       };
     default:

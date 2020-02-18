@@ -10,12 +10,12 @@ import { Provider } from 'react-redux';
 import { store } from './redux/store';
 
 ReactDOM.render(
-  <Provider store={store}>
-    <ThemeProvider theme={theme}>
+  <ThemeProvider theme={theme}>
+    <Provider store={store}>
       <CssBaseline />
       <App />
-    </ThemeProvider>
-  </Provider>,
+    </Provider>
+  </ThemeProvider>,
   document.getElementById('root'),
 );
 

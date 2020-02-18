@@ -2,7 +2,7 @@ import React from 'react';
 import './App.scss';
 import { Posts } from '../Posts';
 
-const App: React.FC = () => {
+export const App = () => {
   return (
     <div className="App">
       <main>
@@ -12,5 +12,3 @@ const App: React.FC = () => {
     </div>
   );
 };
-
-export default App;
