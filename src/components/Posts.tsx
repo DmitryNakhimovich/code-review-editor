@@ -7,13 +7,13 @@ export const Posts = () => {
   const dispatch = useDispatch<any>();
   const posts = useSelector((state: any) => state.posts);
 
-  useEffect(() => dispatch(fetchPosts()), []);
+  useEffect(() => dispatch(fetchPosts()), [dispatch]);
 
   return (
     <div>
       {posts.loading && <Preloader />}
       {posts.posts.map((post: any) => (
-        <p>{post.title}</p>
+        <p key={post.id}>{post.title}</p>
       ))}
     </div>
   );
