@@ -1,4 +1,5 @@
 import Cookies from './Cookies';
+import { HOST_PROVIDER } from '../constants/Host';
 
 interface ILogin {
   username: string;
@@ -12,7 +13,7 @@ interface ICheckError {
 export default {
   login: ({ username, password }: ILogin) => {
     const identifier = username;
-    const request = new Request('http://localhost:1337/auth/local', {
+    const request = new Request(`${HOST_PROVIDER}/auth/local`, {
       method: 'POST',
       body: JSON.stringify({ identifier, password }),
       headers: new Headers({ 'Content-Type': 'application/json' }),

@@ -6,17 +6,29 @@ import russianMessages from 'ra-language-russian';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import { createBrowserHistory } from 'history';
 import { dataProvider } from '../helpers/dataProvider';
+import { IUserState, user } from '../redux/reducers/user';
 
 const i18nProvider = polyglotI18nProvider(() => russianMessages, 'ru');
 
 const history = createBrowserHistory();
 
-// TODO add user from login to redux
+interface IProps {
+  initialState: {
+    user?: IUserState;
+  };
+}
 
-const App = () => (
+const App = (props: IProps) => (
   <>
     <CssBaseline />
-    <Admin i18nProvider={i18nProvider} authProvider={authProvider} dataProvider={dataProvider} history={history}>
+    <Admin
+      i18nProvider={i18nProvider}
+      authProvider={authProvider}
+      dataProvider={dataProvider}
+      history={history}
+      customReducers={{ user }}
+      initialState={props.initialState}
+    >
       <Resource name="courses" list={ListGuesser} />
     </Admin>
   </>

@@ -21,6 +21,7 @@
     "variable-name": [true, "ban-keywords", "check-format", "allow-pascal-case","allow-leading-underscore"],
     "arrow-return-shorthand": [true, "multiline"],
     "prefer-template": false,
-    "no-submodule-imports": false
+    "no-submodule-imports": false,
+    "no-console": false
   }
 }

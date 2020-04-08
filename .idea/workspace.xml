@@ -2,13 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3d0b1288-72e8-43e5-9ed7-eeb29e4e6c50" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/helpers/dataProvider.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/constants/Host.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/actions/user.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/reducers/user.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/types/user.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/helpers/authProvider.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/authProvider.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/helpers/dataProvider.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/dataProvider.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tslint.json" beforeDir="false" afterPath="$PROJECT_DIR$/tslint.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,16 +63,16 @@
     <property name="ts.external.directory.path" value="C:\Projects\Artezio\Academy\code-review-editor\node_modules\typescript\lib" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Projects\Home\pet-test" />
+      <recent name="C:\Projects\Home\pet-test\src" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Projects\Home\pet-test\src\redux\types" />
       <recent name="C:\Projects\Home\pet-test\src\redux\reducers" />
       <recent name="C:\Projects\Home\pet-test\src\redux\actions" />
       <recent name="C:\Projects\Home\pet-test\src\assets" />
       <recent name="C:\Projects\Home\pet-test\src\imgs" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Projects\Home\pet-test" />
-      <recent name="C:\Projects\Home\pet-test\src" />
     </key>
   </component>
   <component name="RunManager">
@@ -104,7 +108,7 @@
       <workItem from="1569672578230" duration="3537000" />
       <workItem from="1582021422708" duration="6685000" />
       <workItem from="1586025177815" duration="3203000" />
-      <workItem from="1586099173803" duration="18820000" />
+      <workItem from="1586099173803" duration="28789000" />
     </task>
     <task id="LOCAL-00001" summary="update package">
       <created>1582030948971</created>
@@ -127,28 +131,47 @@
       <option name="project" value="LOCAL" />
       <updated>1586177636814</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add normal history">
+      <created>1586338559738</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1586338559738</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="update package" />
     <MESSAGE value="add auth, russian lang, update package" />
-    <option name="LAST_COMMIT_MESSAGE" value="add auth, russian lang, update package" />
+    <MESSAGE value="add normal history" />
+    <option name="LAST_COMMIT_MESSAGE" value="add normal history" />
   </component>
   <component name="WindowStateProjectService">
     <state x="803" y="294" key="#TSLint" timestamp="1586336492542">
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
     <state x="803" y="294" key="#TSLint/62.0.2498.1440/62.-1080.2498.1080@62.0.2498.1440" timestamp="1586336492542" />
-    <state x="339" y="76" width="1826" height="1064" key="CommitChangelistDialog2" timestamp="1586338519291">
+    <state x="339" y="76" width="1826" height="1064" key="CommitChangelistDialog2" timestamp="1586338559084">
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
     <state x="-1707" y="55" width="1603" height="920" key="CommitChangelistDialog2/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1582030947823" />
-    <state x="339" y="76" width="1826" height="1064" key="CommitChangelistDialog2/62.0.2498.1440/62.-1080.2498.1080@62.0.2498.1440" timestamp="1586338519291" />
+    <state x="339" y="76" width="1826" height="1064" key="CommitChangelistDialog2/62.0.2498.1440/62.-1080.2498.1080@62.0.2498.1440" timestamp="1586338559084" />
     <state x="715" y="180" key="EditFileWatcherDialog" timestamp="1586111323647">
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
@@ -159,35 +182,39 @@
     </state>
     <state x="-1230" y="215" key="FileChooserDialogImpl/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1582032231584" />
     <state x="690" y="215" key="FileChooserDialogImpl/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1582022315407" />
-    <state width="2443" height="343" key="GridCell.Tab.0.bottom" timestamp="1586336715367">
+    <state width="2443" height="241" key="GridCell.Tab.0.bottom" timestamp="1586344837635">
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
     <state width="1864" height="261" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1582181925353" />
     <state width="1864" height="261" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1582022124779" />
-    <state width="2443" height="343" key="GridCell.Tab.0.bottom/62.0.2498.1440/62.-1080.2498.1080@62.0.2498.1440" timestamp="1586336715367" />
-    <state width="2443" height="343" key="GridCell.Tab.0.center" timestamp="1586336715367">
+    <state width="2443" height="241" key="GridCell.Tab.0.bottom/62.0.2498.1440/62.-1080.2498.1080@62.0.2498.1440" timestamp="1586344837635" />
+    <state width="2443" height="241" key="GridCell.Tab.0.center" timestamp="1586344837635">
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
     <state width="1864" height="261" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1582181925353" />
     <state width="1864" height="261" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1582022124779" />
-    <state width="2443" height="343" key="GridCell.Tab.0.center/62.0.2498.1440/62.-1080.2498.1080@62.0.2498.1440" timestamp="1586336715367" />
-    <state width="2443" height="343" key="GridCell.Tab.0.left" timestamp="1586336715367">
+    <state width="2443" height="241" key="GridCell.Tab.0.center/62.0.2498.1440/62.-1080.2498.1080@62.0.2498.1440" timestamp="1586344837635" />
+    <state width="2443" height="241" key="GridCell.Tab.0.left" timestamp="1586344837634">
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
     <state width="1864" height="261" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1582181925353" />
     <state width="1864" height="261" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1582022124779" />
-    <state width="2443" height="343" key="GridCell.Tab.0.left/62.0.2498.1440/62.-1080.2498.1080@62.0.2498.1440" timestamp="1586336715367" />
-    <state width="2443" height="343" key="GridCell.Tab.0.right" timestamp="1586336715367">
+    <state width="2443" height="241" key="GridCell.Tab.0.left/62.0.2498.1440/62.-1080.2498.1080@62.0.2498.1440" timestamp="1586344837634" />
+    <state width="2443" height="241" key="GridCell.Tab.0.right" timestamp="1586344837635">
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
     <state width="1864" height="261" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1582181925353" />
     <state width="1864" height="261" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1582022124779" />
-    <state width="2443" height="343" key="GridCell.Tab.0.right/62.0.2498.1440/62.-1080.2498.1080@62.0.2498.1440" timestamp="1586336715367" />
+    <state width="2443" height="241" key="GridCell.Tab.0.right/62.0.2498.1440/62.-1080.2498.1080@62.0.2498.1440" timestamp="1586344837635" />
     <state x="511" y="83" key="SettingsEditor" timestamp="1586111325116">
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
     <state x="345" y="60" key="SettingsEditor/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1582022471047" />
     <state x="511" y="83" key="SettingsEditor/62.0.2498.1440/62.-1080.2498.1080@62.0.2498.1440" timestamp="1586111325116" />
+    <state x="1150" y="616" key="VCS.ChangelistChooser" timestamp="1586338980969">
+      <screen x="62" y="0" width="2498" height="1440" />
+    </state>
+    <state x="1150" y="616" key="VCS.ChangelistChooser/62.0.2498.1440/62.-1080.2498.1080@62.0.2498.1440" timestamp="1586338980969" />
     <state x="650" y="258" key="Vcs.Push.Dialog.v2" timestamp="1586177690003">
       <screen x="62" y="0" width="2498" height="1440" />
     </state>

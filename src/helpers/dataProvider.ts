@@ -1,12 +1,14 @@
 import Cookies from './Cookies';
 import { fetchUtils } from 'react-admin';
 import simpleRestProvider from 'ra-strapi-rest';
+import { HOST_PROVIDER } from '../constants/Host';
 
 interface IOptions {
   headers?: Headers;
+  [key: string]: any;
 }
 
-const httpClient = (url: string, options: IOptions = {}) => {
+export const httpClient = (url: string, options: IOptions = {}) => {
   if (!options.headers) {
     options.headers = new Headers({ Accept: 'application/json' });
   }
@@ -15,4 +17,4 @@ const httpClient = (url: string, options: IOptions = {}) => {
   return fetchUtils.fetchJson(url, options);
 };
 
-export const dataProvider = simpleRestProvider('http://localhost:1337', httpClient);
+export const dataProvider = simpleRestProvider(HOST_PROVIDER, httpClient);
