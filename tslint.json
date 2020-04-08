@@ -1,14 +1,14 @@
 {
   "extends": [
-    "tslint:recommended",
+    "tslint:latest",
     "tslint-react",
+    "tslint-eslint-rules",
     "tslint-config-prettier"
   ],
   "rulesDirectory": [
     "tslint-plugin-prettier"
   ],
   "rules": {
-    "prettier": true,
     "interface-name": false,
     "object-literal-sort-keys": false,
     "ordered-imports": false,
@@ -20,6 +20,7 @@
     "object-shorthand-properties-first": false,
     "variable-name": [true, "ban-keywords", "check-format", "allow-pascal-case","allow-leading-underscore"],
     "arrow-return-shorthand": [true, "multiline"],
-    "prefer-template": false
+    "prefer-template": false,
+    "no-submodule-imports": false
   }
 }

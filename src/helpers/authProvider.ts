@@ -11,7 +11,7 @@ interface ICheckError {
 
 export default {
   login: ({ username, password }: ILogin) => {
-    const identifier = username; // strapi expects 'identifier' and not 'username'
+    const identifier = username;
     const request = new Request('http://localhost:1337/auth/local', {
       method: 'POST',
       body: JSON.stringify({ identifier, password }),

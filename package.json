@@ -7,6 +7,7 @@
     "@material-ui/icons": "4.9.1",
     "@types/classnames": "2.2.10",
     "@types/lodash": "4.14.149",
+    "@types/history": "^4.7.5",
     "@types/react": "^16.9.32",
     "@types/react-dom": "^16.9.6",
     "@types/react-redux": "^7.1.7",
@@ -18,6 +19,7 @@
     "proxy-polyfill": "^0.3.1",
     "react-app-polyfill": "^1.0.6",
     "lodash": "4.17.15",
+    "history": "^4.10.1",
     "node-sass": "^4.13.1",
     "ra-strapi-rest": "^0.1.2",
     "ra-i18n-polyglot": "^3.4.0",
@@ -39,7 +41,8 @@
     "tslint": "^6.1.1",
     "tslint-config-prettier": "^1.18.0",
     "tslint-plugin-prettier": "^2.3.0",
-    "tslint-react": "^4.2.0"
+    "tslint-react": "^4.2.0",
+    "tslint-eslint-rules": "^5.4.0"
   },
   "scripts": {
     "start": "react-scripts start",
