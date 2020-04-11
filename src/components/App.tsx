@@ -7,6 +7,8 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import { createBrowserHistory } from 'history';
 import { dataProvider } from '../helpers/dataProvider';
 import { IUserState, user } from '../redux/reducers/user';
+import Logout from './Auth/Logout';
+import Login from './Auth/Login';
 
 const i18nProvider = polyglotI18nProvider(() => russianMessages, 'ru');
 
@@ -28,6 +30,8 @@ const App = (props: IProps) => (
       history={history}
       customReducers={{ user }}
       initialState={props.initialState}
+      logoutButton={Logout}
+      loginPage={Login}
     >
       <Resource name="courses" list={ListGuesser} />
     </Admin>

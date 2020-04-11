@@ -1,12 +1,10 @@
-const POST_COUNT = 5;
-export const fetchPosts = () => (dispatch: any) => {
-  // emulate api request
-  dispatch({ type: 1 });
-  // setTimeout(() => dispatch(receivePosts(POST_COUNT)), 1000);
-};
+import { CLEAR_USER, RECEIVE_USER } from '../types/user';
 
-export const fetchPost = (id: string) => (dispatch: any) => {
-  // emulate api request
-  dispatch({ type: 2 });
-  // setTimeout(() => dispatch(receivePosts(1, { id })), 1000);
-};
+export const clearUser = () => ({
+  type: CLEAR_USER,
+});
+
+export const receiveUser = (data: any) => ({
+  type: RECEIVE_USER,
+  payload: data,
+});

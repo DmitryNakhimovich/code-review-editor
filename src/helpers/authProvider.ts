@@ -28,6 +28,7 @@ export default {
       .then(response => {
         Cookies.setCookie('token', response.jwt, 1);
         Cookies.setCookie('role', response.user.role.name, 1);
+        return response.user;
       });
   },
 

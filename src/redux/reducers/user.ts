@@ -1,4 +1,4 @@
-import { RECEIVE_USER } from '../types/user';
+import { CLEAR_USER, RECEIVE_USER } from '../types/user';
 
 export interface IUserState {
   username?: string;
@@ -13,6 +13,11 @@ export const user = (state = initialState, action: any) => {
     case RECEIVE_USER:
       return {
         ...state,
+        ...action.payload,
+      };
+    case CLEAR_USER:
+      return {
+        username: '',
       };
     default:
       return state;
