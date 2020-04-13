@@ -35,7 +35,7 @@ const LogoutWithRef: FunctionComponent<Props & MenuItemProps<'li', { button: tru
     const handleClick = useCallback(() => {
       dispatch(clearUser());
       return logout(redirectTo);
-    }, [redirectTo, logout]);
+    }, [redirectTo, logout, dispatch]);
     return (
       <MenuItem className={classnames('logout', classes.menuItem, className)} onClick={handleClick} ref={ref} {...rest}>
         <ListItemIcon className={classes.icon}>{icon ? icon : <ExitIcon />}</ListItemIcon>

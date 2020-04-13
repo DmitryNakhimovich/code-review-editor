@@ -17,4 +17,6 @@ export const httpClient = (url: string, options: IOptions = {}) => {
   return fetchUtils.fetchJson(url, options);
 };
 
-export const dataProvider = simpleRestProvider(HOST_PROVIDER, httpClient);
+const uploadFields = ['image'];
+
+export const dataProvider = simpleRestProvider(HOST_PROVIDER, httpClient, uploadFields);
