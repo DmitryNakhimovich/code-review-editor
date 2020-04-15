@@ -7,6 +7,10 @@ import withWidth from '@material-ui/core/withWidth';
 import { Link } from 'react-router-dom';
 import { linkToRecord } from 'ra-core';
 import { HOST_PROVIDER } from '../../constants/Host';
+import { useSelector } from 'react-redux';
+import { IAppState } from '../../redux/reducers/user';
+import IconButton from '@material-ui/core/IconButton';
+import StarTwoToneIcon from '@material-ui/icons/StarTwoTone';
 
 interface IGridList {
   width?: string;
@@ -27,6 +31,9 @@ const useStyles = makeStyles(theme => ({
   },
   tileBar: {
     background: 'linear-gradient(to top, rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.4) 70%,rgba(0,0,0,0) 100%)',
+  },
+  tileBarIcon: {
+    background: 'none',
   },
   placeholder: {
     backgroundColor: theme.palette.grey[300],
@@ -69,6 +76,7 @@ const LoadingGridList = ({ width = 'lg', nbItems = 10 }: IGridList) => {
 
 const LoadedGridList = ({ ids = [], data, basePath, width = 'xl' }: IGridList) => {
   const classes = useStyles();
+  const { courses: userCourses = [] } = useSelector((state: IAppState) => state.user);
   return (
     <div className={classes.root}>
       <MuiGridList cellHeight={cellHeight} cols={getColsForWidth(width)} className={classes.gridList}>
@@ -78,6 +86,18 @@ const LoadedGridList = ({ ids = [], data, basePath, width = 'xl' }: IGridList) =
               src={data[id].image ? `${HOST_PROVIDER}${data[id].image.url}` : '/image/nopic.png'}
               alt={data[id].Title}
             />
+            {userCourses.includes(data[id].id) && (
+              <GridListTileBar
+                titlePosition="top"
+                actionIcon={
+                  <IconButton disabled={true}>
+                    <StarTwoToneIcon fontSize={'large'} style={{ color: 'yellow' }} />
+                  </IconButton>
+                }
+                actionPosition="right"
+                className={classes.tileBarIcon}
+              />
+            )}
             <GridListTileBar className={classes.tileBar} title={data[id].Title} />
           </GridListTile>
         ))}

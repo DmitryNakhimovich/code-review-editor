@@ -1,7 +1,13 @@
 import { CLEAR_USER, RECEIVE_USER } from '../types/user';
+import { ReduxState } from 'ra-core';
+
+export interface IAppState extends ReduxState {
+  user: IUserState;
+}
 
 export interface IUserState {
-  username?: string;
+  username: string;
+  [key: string]: any;
 }
 
 const initialState: IUserState = {

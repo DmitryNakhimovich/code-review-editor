@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3d0b1288-72e8-43e5-9ed7-eeb29e4e6c50" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/image/nopic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Courses/CoursesList.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Courses/GridList.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Courses/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/helpers/dataProvider.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/dataProvider.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Courses/GridList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Courses/GridList.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/reducers/user.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/user.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +103,7 @@
       <workItem from="1586099173803" duration="28789000" />
       <workItem from="1586587644458" duration="13102000" />
       <workItem from="1586789696569" duration="299000" />
-      <workItem from="1586790209844" duration="9599000" />
+      <workItem from="1586790209844" duration="11760000" />
     </task>
     <task id="LOCAL-00001" summary="update package">
       <created>1582030948971</created>
@@ -151,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586792690868</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="add courses list view">
+      <created>1586952771908</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1586952771908</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -177,18 +180,19 @@
     <MESSAGE value="add normal history" />
     <MESSAGE value="user redux auth" />
     <MESSAGE value="add img loading" />
-    <option name="LAST_COMMIT_MESSAGE" value="add img loading" />
+    <MESSAGE value="add courses list view" />
+    <option name="LAST_COMMIT_MESSAGE" value="add courses list view" />
   </component>
   <component name="WindowStateProjectService">
     <state x="803" y="294" key="#TSLint" timestamp="1586336492542">
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
     <state x="803" y="294" key="#TSLint/62.0.2498.1440/62.-1080.2498.1080@62.0.2498.1440" timestamp="1586336492542" />
-    <state x="339" y="76" width="1826" height="1064" key="CommitChangelistDialog2" timestamp="1586792690157">
+    <state x="339" y="76" width="1826" height="1064" key="CommitChangelistDialog2" timestamp="1586952771224">
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
     <state x="-1707" y="55" width="1603" height="920" key="CommitChangelistDialog2/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1582030947823" />
-    <state x="339" y="76" width="1826" height="1064" key="CommitChangelistDialog2/62.0.2498.1440/62.-1080.2498.1080@62.0.2498.1440" timestamp="1586792690157" />
+    <state x="339" y="76" width="1826" height="1064" key="CommitChangelistDialog2/62.0.2498.1440/62.-1080.2498.1080@62.0.2498.1440" timestamp="1586952771224" />
     <state x="715" y="180" key="EditFileWatcherDialog" timestamp="1586111323647">
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
@@ -233,11 +237,11 @@
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
     <state x="1150" y="616" key="VCS.ChangelistChooser/62.0.2498.1440/62.-1080.2498.1080@62.0.2498.1440" timestamp="1586338980969" />
-    <state x="650" y="258" key="Vcs.Push.Dialog.v2" timestamp="1586619117282">
+    <state x="650" y="258" key="Vcs.Push.Dialog.v2" timestamp="1586952777527">
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
     <state x="-1468" y="186" key="Vcs.Push.Dialog.v2/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1582030952471" />
-    <state x="650" y="258" key="Vcs.Push.Dialog.v2/62.0.2498.1440/62.-1080.2498.1080@62.0.2498.1440" timestamp="1586619117282" />
+    <state x="650" y="258" key="Vcs.Push.Dialog.v2/62.0.2498.1440/62.-1080.2498.1080@62.0.2498.1440" timestamp="1586952777527" />
     <state x="573" y="181" width="773" height="678" key="find.popup" timestamp="1582022321941">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
