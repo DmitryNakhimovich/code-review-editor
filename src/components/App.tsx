@@ -1,5 +1,5 @@
 import React from 'react';
-import { Admin, Resource, ListGuesser } from 'react-admin';
+import { Admin, Resource } from 'react-admin';
 import authProvider from '../helpers/authProvider';
 import polyglotI18nProvider from 'ra-i18n-polyglot';
 import russianMessages from 'ra-language-russian';
@@ -9,6 +9,7 @@ import { dataProvider } from '../helpers/dataProvider';
 import { IUserState, user } from '../redux/reducers/user';
 import Logout from './Auth/Logout';
 import Login from './Auth/Login';
+import courses from './Courses';
 
 const i18nProvider = polyglotI18nProvider(() => russianMessages, 'ru');
 
@@ -33,7 +34,7 @@ const App = (props: IProps) => (
       logoutButton={Logout}
       loginPage={Login}
     >
-      <Resource name="courses" list={ListGuesser} />
+      <Resource name="courses" {...courses} />
     </Admin>
   </>
 );

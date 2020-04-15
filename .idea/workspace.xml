@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3d0b1288-72e8-43e5-9ed7-eeb29e4e6c50" name="Default Changelist" comment="user redux auth">
+    <list default="true" id="3d0b1288-72e8-43e5-9ed7-eeb29e4e6c50" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/image/nopic.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Courses/CoursesList.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Courses/GridList.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Courses/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Auth/Logout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Auth/Logout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/helpers/dataProvider.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/dataProvider.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -103,7 +107,7 @@
       <workItem from="1586099173803" duration="28789000" />
       <workItem from="1586587644458" duration="13102000" />
       <workItem from="1586789696569" duration="299000" />
-      <workItem from="1586790209844" duration="1708000" />
+      <workItem from="1586790209844" duration="9599000" />
     </task>
     <task id="LOCAL-00001" summary="update package">
       <created>1582030948971</created>
@@ -140,7 +144,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586619113481</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add img loading">
+      <created>1586792690868</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1586792690868</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -165,18 +176,19 @@
     <MESSAGE value="add auth, russian lang, update package" />
     <MESSAGE value="add normal history" />
     <MESSAGE value="user redux auth" />
-    <option name="LAST_COMMIT_MESSAGE" value="user redux auth" />
+    <MESSAGE value="add img loading" />
+    <option name="LAST_COMMIT_MESSAGE" value="add img loading" />
   </component>
   <component name="WindowStateProjectService">
     <state x="803" y="294" key="#TSLint" timestamp="1586336492542">
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
     <state x="803" y="294" key="#TSLint/62.0.2498.1440/62.-1080.2498.1080@62.0.2498.1440" timestamp="1586336492542" />
-    <state x="339" y="76" width="1826" height="1064" key="CommitChangelistDialog2" timestamp="1586789761301">
+    <state x="339" y="76" width="1826" height="1064" key="CommitChangelistDialog2" timestamp="1586792690157">
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
     <state x="-1707" y="55" width="1603" height="920" key="CommitChangelistDialog2/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1582030947823" />
-    <state x="339" y="76" width="1826" height="1064" key="CommitChangelistDialog2/62.0.2498.1440/62.-1080.2498.1080@62.0.2498.1440" timestamp="1586789761301" />
+    <state x="339" y="76" width="1826" height="1064" key="CommitChangelistDialog2/62.0.2498.1440/62.-1080.2498.1080@62.0.2498.1440" timestamp="1586792690157" />
     <state x="715" y="180" key="EditFileWatcherDialog" timestamp="1586111323647">
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
@@ -188,30 +200,30 @@
     <state x="-1230" y="215" key="FileChooserDialogImpl/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1582032231584" />
     <state x="690" y="215" key="FileChooserDialogImpl/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1582022315407" />
     <state x="960" y="298" key="FileChooserDialogImpl/62.0.2498.1440/62.-1080.2498.1080@62.0.2498.1440" timestamp="1586789732443" />
-    <state width="2443" height="242" key="GridCell.Tab.0.bottom" timestamp="1586637120566">
+    <state width="2443" height="242" key="GridCell.Tab.0.bottom" timestamp="1586951674979">
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
     <state width="1864" height="261" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1582181925353" />
     <state width="1864" height="261" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1582022124779" />
-    <state width="2443" height="242" key="GridCell.Tab.0.bottom/62.0.2498.1440/62.-1080.2498.1080@62.0.2498.1440" timestamp="1586637120566" />
-    <state width="2443" height="242" key="GridCell.Tab.0.center" timestamp="1586637120566">
+    <state width="2443" height="242" key="GridCell.Tab.0.bottom/62.0.2498.1440/62.-1080.2498.1080@62.0.2498.1440" timestamp="1586951674979" />
+    <state width="2443" height="242" key="GridCell.Tab.0.center" timestamp="1586951674979">
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
     <state width="1864" height="261" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1582181925353" />
     <state width="1864" height="261" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1582022124779" />
-    <state width="2443" height="242" key="GridCell.Tab.0.center/62.0.2498.1440/62.-1080.2498.1080@62.0.2498.1440" timestamp="1586637120566" />
-    <state width="2443" height="242" key="GridCell.Tab.0.left" timestamp="1586637120566">
+    <state width="2443" height="242" key="GridCell.Tab.0.center/62.0.2498.1440/62.-1080.2498.1080@62.0.2498.1440" timestamp="1586951674979" />
+    <state width="2443" height="242" key="GridCell.Tab.0.left" timestamp="1586951674979">
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
     <state width="1864" height="261" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1582181925353" />
     <state width="1864" height="261" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1582022124779" />
-    <state width="2443" height="242" key="GridCell.Tab.0.left/62.0.2498.1440/62.-1080.2498.1080@62.0.2498.1440" timestamp="1586637120566" />
-    <state width="2443" height="242" key="GridCell.Tab.0.right" timestamp="1586637120566">
+    <state width="2443" height="242" key="GridCell.Tab.0.left/62.0.2498.1440/62.-1080.2498.1080@62.0.2498.1440" timestamp="1586951674979" />
+    <state width="2443" height="242" key="GridCell.Tab.0.right" timestamp="1586951674979">
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
     <state width="1864" height="261" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1582181925353" />
     <state width="1864" height="261" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1582022124779" />
-    <state width="2443" height="242" key="GridCell.Tab.0.right/62.0.2498.1440/62.-1080.2498.1080@62.0.2498.1440" timestamp="1586637120566" />
+    <state width="2443" height="242" key="GridCell.Tab.0.right/62.0.2498.1440/62.-1080.2498.1080@62.0.2498.1440" timestamp="1586951674979" />
     <state x="511" y="83" key="SettingsEditor" timestamp="1586111325116">
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
