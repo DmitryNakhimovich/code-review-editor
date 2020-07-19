@@ -19,7 +19,7 @@
     "core-js": "^3.6.4",
     "proxy-polyfill": "^0.3.1",
     "react-app-polyfill": "^1.0.6",
-    "lodash": "4.17.15",
+    "lodash": "4.17.19",
     "history": "^4.10.1",
     "node-sass": "^4.13.1",
     "ra-strapi-rest": "^0.1.2",
