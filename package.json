@@ -21,7 +21,7 @@
     "react-app-polyfill": "^1.0.6",
     "lodash": "4.17.15",
     "history": "^4.10.1",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "ra-strapi-rest": "^0.1.2",
     "ra-i18n-polyglot": "^3.4.0",
     "ra-language-russian": "^3.2.1",
